@@ -1,0 +1,44 @@
+[
+    {
+        "img":"fa-solid fa-gauge",
+        "name": "Dashboard",
+        "subElement":["User","Access Level","Campaign"],
+        "link":["/admin","/accesslevel","/campaign"]
+    },
+    {
+        "img":"fa-solid fa-wifi",
+        "name": "Live Monitor",
+        "subElement":["User","Access Level","Campaign"],
+        "link":["/admin","/accesslevel","/campaign"]
+    },
+    {
+        "img":"fa-solid fa-pager",
+        "name": "Report",
+        "subElement":["LOGGER REPORTS","SUMMARY REPORTS"],
+        "link":["/sqlreports","/summarysql"]
+    },
+    {
+        "img":"fa-solid fa-tty",
+        "name": "Conversation",
+        "subElement":["User","Access Level","Campaign"],
+        "link":["/admin","/accesslevel","/campaign"]
+    },
+    {
+        "img":"fa-solid fa-address-book",
+        "name": "Contact",
+        "subElement":["Chat"],
+        "link":["/chat"]
+    },
+    {
+        "img":"fa-brands fa-centos",
+        "name": "Operations",
+        "subElement":["User","Access Level","Campaign","Add Campaign"],
+        "link":["/admin","/accesslevel","/campaign","/addcampaign"]
+    },
+    {
+        "img":"fa-regular fa-chart-simple",
+        "name": "Advanced Setting",
+        "subElement":["User","Access Level","Campaign"],
+        "link":["/admin","/accesslevel","/campaign"]
+    }
+]

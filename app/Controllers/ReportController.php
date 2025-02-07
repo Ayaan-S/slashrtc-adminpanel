@@ -9,7 +9,7 @@ class ReportController extends Controller
     public function showReport()
     {
         // API URL to fetch report data
-        $apiUrl = 'http://192.168.0.229:3001/sql/getall';
+        $apiUrl = 'http://192.168.0.139:3001/sql/getall';
         
         // Fetch data from the API
         $response = file_get_contents($apiUrl);
@@ -64,7 +64,7 @@ class ReportController extends Controller
     public function sqldownloadCSV()
     {
         // API URL to fetch report data
-        $apiUrl = 'http://192.168.0.229:3001/sql/getall';
+        $apiUrl = 'http://192.168.0.139:3001/sql/getall';
 
         // Initialize cURL
         $ch = curl_init($apiUrl);
@@ -123,7 +123,7 @@ class ReportController extends Controller
     public function mongoreport()
     {
         // API URL to fetch report data
-        $apiUrl = 'http://192.168.0.229:3000/mongo/getall';
+        $apiUrl = 'http://192.168.0.139:3000/mongo/getall';
 
         // Initialize cURL
         $ch = curl_init($apiUrl);
@@ -182,7 +182,7 @@ class ReportController extends Controller
     public function mongodownloadCsv()
     {
         // API URL to fetch report data
-        $apiUrl = 'http://192.168.0.229:3000/mongo/getall';
+        $apiUrl = 'http://192.168.0.139:3000/mongo/getall';
 
         // Initialize cURL
         $ch = curl_init($apiUrl);
@@ -242,7 +242,7 @@ class ReportController extends Controller
     public function elasticreport()
     {
         // API URL to fetch report data from Elasticsearch
-        $apiUrl = 'http://192.168.0.229:3002/elastic/getall';
+        $apiUrl = 'http://192.168.0.139:3002/elastic/getall';
 
         // Initialize cURL
         $ch = curl_init($apiUrl);
@@ -287,7 +287,7 @@ class ReportController extends Controller
     public function elasticdownloadCsv()
     {
         // API URL to fetch report data from Elasticsearch
-        $apiUrl = 'http://192.168.0.229:3002/elastic/getall';
+        $apiUrl = 'http://192.168.0.139:3002/elastic/getall';
 
         // Initialize cURL
         $ch = curl_init($apiUrl);

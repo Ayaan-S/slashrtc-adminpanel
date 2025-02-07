@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summary Reports</title>
     <style>
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             background-color: #DAD2D8;
             margin: 20px;
-        }
-        /* Additional styles can be added here to match the admin panel */
+        } */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -18,15 +17,17 @@
             border: 2px solid;
         }
         th, td {
-            border: 2px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        tr:hover {background-color: #F2AF29;}
-        th {
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    tr:hover {
+        background-color:rgba(187, 178, 178, 0.87);
+    }
+        /* th {
             background-color: black;
             color: white;
-        }
+        } */
         .button-container {
             margin-bottom: 3px;
             display: flex;
@@ -34,26 +35,29 @@
             gap: 10px; 
         }
         .back {
-            background-color: red;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 0.5rem;
-        }
-        .filter-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
+       
+        color: red;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    } 
+    .filter-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        gap: 2px;
+    }
         .filter-container select {
-            padding: 10px;
-            margin-left: 10px;
-            background-color: #F0F6F6;
-            color: black;
-            border: none;
-            cursor: pointer;
-        }
+        padding: 10px;
+        margin-left: 10px;
+        background-color: rgba(65, 67, 97, 0.87);
+        color: white; /* Adjusted text color */
+        border: none;
+        cursor: pointer;
+        gap: 2px;
+        border-radius: 0.5rem;
+    } 
         .pagination {
             margin-top: 20px;
             display: flex;
@@ -86,7 +90,11 @@
 </head>
 <body>
 <div>
-    <div class="filter-container">
+<div class="header">
+    <button class="back" onclick="window.location.href='/'">Back</button>
+    <h1 style="text-align: center; font-size:2.5rem; font-weight:500;">Summary Report</h1>
+</div>
+    <!-- <div class="filter-container">
         <button class="back" onclick="window.location.href='/'">Back</button>
         <select onchange="location = this.value;">
             <option value="">Select Filter</option>
@@ -94,8 +102,7 @@
             <option value="/campaignSummary">Campaign Report</option>
             <option value="/agentSummary">Agent Report</option>
         </select>
-    </div>
-    <h2 style="text-align: center;">Summary Report</h2>
+    </div> -->
     
     <div class="report-buttons">
         <button onclick="window.location.href='/summarysql'">SQL Summary Report</button>
@@ -105,14 +112,14 @@
     
     <table>
         <thead>
-            <tr>
-                <th>Total Calls</th>
-                <th>Call Hours</th>
-                <th>Missed Calls</th>
-                <th>Call Answered</th>
-                <th>Call Auto Drop</th>
-                <th>Call Auto Failed</th>
-                <th>Talk Time</th>
+            <tr class="bg-gray-500 text-white">
+                <th class="py-3 px-4 border-b border-gray-300">Total Calls</th>
+                <th class="py-3 px-4 border-b border-gray-300">Call Hours</th>
+                <th class="py-3 px-4 border-b border-gray-300">Missed Calls</th>
+                <th class="py-3 px-4 border-b border-gray-300">Call Answered</th>
+                <th class="py-3 px-4 border-b border-gray-300">Call Auto Drop</th>
+                <th class="py-3 px-4 border-b border-gray-300">Call Auto Failed</th>
+                <th class="py-3 px-4 border-b border-gray-300">Talk Time</th>
             </tr>
         </thead>
         <tbody>

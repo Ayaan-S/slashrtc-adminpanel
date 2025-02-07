@@ -10,7 +10,7 @@ class SummaryController extends BaseController
     public function sqlsummaryreport()
     {
         // Fetch data from MySQL without pagination
-        $apiUrl = 'http://192.168.0.229:3001/sql/summary'; // Replace with the actual API URL
+        $apiUrl = 'http://192.168.0.139:3001/sql/summary'; // Replace with the actual API URL
         
         // Fetch data from the API
         $response = file_get_contents($apiUrl);
@@ -66,7 +66,7 @@ class SummaryController extends BaseController
 
     public function sqlsummarydownloadCsv()
     {
-        $apiUrl = 'http://192.168.0.229:3001/sql/summary'; // Replace with the actual API URL
+        $apiUrl = 'http://192.168.0.139:3001/sql/summary'; // Replace with the actual API URL
         $response = file_get_contents($apiUrl);
         $reportData = json_decode($response, true);
 
@@ -92,7 +92,7 @@ class SummaryController extends BaseController
     public function mongosummaryreport()
     {
         // Fetch data from MongoDB API
-        $apiUrl = 'http://192.168.0.229:3000/mongo/summary'; // Replace with your MongoDB API URL
+        $apiUrl = 'http://192.168.0.139:3000/mongo/summary'; // Replace with your MongoDB API URL
         $response = file_get_contents($apiUrl);
         $reportData = json_decode($response, true);
 
@@ -115,7 +115,7 @@ class SummaryController extends BaseController
 
     public function mongosummarydownloadCsv()
     {
-        $apiUrl = 'http://192.168.0.229:3000/mongo/summary'; // Replace with your MongoDB API URL
+        $apiUrl = 'http://192.168.0.139:3000/mongo/summary'; // Replace with your MongoDB API URL
         $response = file_get_contents($apiUrl);
         $reportData = json_decode($response, true);
 
@@ -141,7 +141,7 @@ class SummaryController extends BaseController
     public function elasticsummaryreport()
     {
         // Fetch data from Elasticsearch API
-        $apiUrl = 'http://192.168.0.229:3002/elastic/summary'; // Replace with your Elasticsearch API URL
+        $apiUrl = 'http://192.168.0.139:3002/elastic/summary'; // Replace with your Elasticsearch API URL
         $response = file_get_contents($apiUrl);
         $reportData = json_decode($response, true);
         // print_r($reportData); die;
@@ -165,7 +165,7 @@ class SummaryController extends BaseController
 
     public function elasticsummarydownloadCsv()
     {
-        $apiUrl = 'http://192.168.0.229:3002/elastic/summary'; // Replace with your Elasticsearch API URL
+        $apiUrl = 'http://192.168.0.139:3002/elastic/summary'; // Replace with your Elasticsearch API URL
         $response = file_get_contents($apiUrl);
         $reportData = json_decode($response, true);
 

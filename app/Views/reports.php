@@ -159,7 +159,7 @@
     <button onclick="openFilterModal()">Click To Filter </button>
     <h1 style="text-align: center; font-size:2.5rem; font-weight:500;">LOGGER REPORTS</h1>
 </div>
-
+                                                                                                                                                                                                                                                                                                                                                                                                  
 <div id="filterModal" class="modal">
     <div class="modal-content">
             <div>

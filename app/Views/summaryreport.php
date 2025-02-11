@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+@include_once('header.php')
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,12 +32,12 @@
             color: white;
         } */
         .button-container {
-            margin-bottom: 3px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px; 
-        }
-        .back {
+        margin-bottom: 3px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px; 
+    }
+    .back {
        
         color: red;
         padding: 10px;
@@ -48,7 +51,7 @@
         margin-bottom: 10px;
         gap: 2px;
     }
-        .filter-container select {
+    .filter-container select {
         padding: 10px;
         margin-left: 10px;
         background-color: rgba(65, 67, 97, 0.87);
@@ -58,34 +61,63 @@
         gap: 2px;
         border-radius: 0.5rem;
     } 
-        .pagination {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap:10px;
-        }
-        .pagination button {
-            padding: 10px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-        .report-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            gap: 10px;
-        }
-        .report-buttons button {
-            padding: 10px;
-            border: none;
-            background-color:rgba(65, 67, 97, 0.87);
-            color: white;
-            cursor: pointer;
-            border-radius: 0.5rem;  
-        }
+    .pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 10px;
+    }
+    .pagination button {
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+    .report-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .report-buttons button {
+        padding: 2px;
+        border: none;
+        /* background-color: rgba(65, 67, 97, 0.87); */
+        color: black;
+        cursor: pointer;
+        font-size: 1.5rem;
+        gap: 2rem;
+        font-weight: 500;
+    } 
+    .filter-options {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .filter-options label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .filter-options select, .filter-options input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .apply-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+    .apply-button:hover {
+        background-color: #0056b3;
+    }
     </style>
 </head>
 <body>
